@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+
+    <string name="title_popularity">Popularity</string>
+    <string name="title_vote_average">Vote Average</string>
+
+    <string name="menu_search">Search</string>
+    <string name="hint_search">Type a title</string>
+
+    <string name="warn_search_min_length">Please enter 3 letters at least</string>
+
+    <string name="button_load_more">Load More</string>
+
+</resources>
