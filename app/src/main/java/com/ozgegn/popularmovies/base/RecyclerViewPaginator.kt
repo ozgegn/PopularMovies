@@ -21,5 +21,4 @@ class RecyclerViewPaginator(
 
         loadMore(++currentPage)
     }
-
 }

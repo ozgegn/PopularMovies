@@ -24,5 +24,4 @@ class TmdbClient @Inject constructor(
     ) {
         tmdbApi.getMovieDetail(movieId, BuildConfig.TMDB_KEY).request(onResult)
     }
-
 }

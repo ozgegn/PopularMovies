@@ -36,5 +36,4 @@ object PersistenceModule {
     fun provideMovieDetailsDao(appDatabase: AppDatabase): MovieDetailsDao {
         return appDatabase.movieDetailDao()
     }
-
 }

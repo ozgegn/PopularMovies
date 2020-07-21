@@ -35,7 +35,7 @@ class MovieListViewModel @ViewModelInject constructor(
         filteredMovieLiveData = movieFilterLiveData.switchMap { query ->
             launchOnViewModelScope {
                 mainRepository.fetchFilteredMovies(query) {
-                   errorMessage.postValue(it)
+                    errorMessage.postValue(it)
                 }
             }
         }
@@ -45,10 +45,9 @@ class MovieListViewModel @ViewModelInject constructor(
         movieFetchLiveData.postValue(page)
     }
 
-    fun filterMovies(query: String){
+    fun filterMovies(query: String) {
         movieFilterLiveData.postValue(query)
     }
 
     fun isLoading(): ObservableBoolean = mainRepository.isLoading
-
 }

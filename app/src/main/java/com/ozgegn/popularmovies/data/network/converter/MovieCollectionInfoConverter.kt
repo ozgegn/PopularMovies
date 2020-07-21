@@ -10,7 +10,7 @@ open class MovieCollectionInfoConverter {
 
     @TypeConverter
     fun fromString(value: String): MovieCollectionInfo? {
-        val adapter : JsonAdapter<MovieCollectionInfo> = moshi.adapter(MovieCollectionInfo::class.java)
+        val adapter: JsonAdapter<MovieCollectionInfo> = moshi.adapter(MovieCollectionInfo::class.java)
         return adapter.fromJson(value)
     }
 
@@ -19,5 +19,4 @@ open class MovieCollectionInfoConverter {
         val adapter: JsonAdapter<MovieCollectionInfo> = moshi.adapter(MovieCollectionInfo::class.java)
         return adapter.toJson(type)
     }
-
 }

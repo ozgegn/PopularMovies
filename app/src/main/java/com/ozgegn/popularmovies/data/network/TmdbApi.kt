@@ -20,5 +20,4 @@ interface TmdbApi {
         @Path("movie_id") movie_id: Int,
         @Query("api_key") apiKey: String
     ): Call<MovieDetailsResponse>
-
 }

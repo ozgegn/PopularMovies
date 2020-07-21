@@ -60,7 +60,6 @@ class MovieListActivity : DataBindingActivity(), SearchView.OnQueryTextListener 
                 binding.buttonLoad.visibility = View.VISIBLE
                 return true
             }
-
         }
         menuItem.setOnActionExpandListener(expandListener)
         searchView.apply {
@@ -69,5 +68,4 @@ class MovieListActivity : DataBindingActivity(), SearchView.OnQueryTextListener 
         }
         return super.onCreateOptionsMenu(menu)
     }
-
 }

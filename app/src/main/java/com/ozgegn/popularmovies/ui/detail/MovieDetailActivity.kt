@@ -31,7 +31,6 @@ class MovieDetailActivity : DataBindingActivity() {
             lifecycleOwner = this@MovieDetailActivity
             viewModel = vm.apply { getMovieDetail(movieId) }
         }
-
     }
 
     private fun subscribeUi() {
@@ -50,5 +49,4 @@ class MovieDetailActivity : DataBindingActivity() {
             TransformationCompat.startActivity(transformationLayout, intent)
         }
     }
-
 }

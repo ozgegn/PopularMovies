@@ -1,6 +1,9 @@
 package com.ozgegn.popularmovies.network
 
-import com.ozgegn.popularmovies.model.*
+import com.ozgegn.popularmovies.model.TopRatedMovieResult
+import com.ozgegn.popularmovies.model.TopRatedMovieResponse
+import com.ozgegn.popularmovies.model.MovieDetailsResponse
+import com.ozgegn.popularmovies.model.MovieCollectionInfo
 
 object MockUtil {
 
@@ -59,5 +62,4 @@ object MockUtil {
         vote_average = 8.9,
         vote_count = 225
     )
-
 }

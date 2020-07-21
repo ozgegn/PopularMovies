@@ -13,5 +13,4 @@ abstract class LiveCoroutinesViewModel : ViewModel() {
             emitSource(block())
         }
     }
-
 }

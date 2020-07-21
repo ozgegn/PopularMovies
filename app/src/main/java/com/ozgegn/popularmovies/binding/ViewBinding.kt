@@ -31,7 +31,6 @@ fun bindLoadImagePalette(view: AppCompatImageView, url: String?, paletteCard: Ma
         .into(view)
 }
 
-
 @BindingAdapter("gone")
 fun bindGone(view: View, shouldBeGone: Boolean) {
     view.gone(shouldBeGone)

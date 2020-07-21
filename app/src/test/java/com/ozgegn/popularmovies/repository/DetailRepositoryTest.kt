@@ -61,7 +61,5 @@ class DetailRepositoryTest {
         loadData.postValue(updatedData)
         verify(observer).onChanged(updatedData)
         loadData.removeObserver(observer)
-
     }
-
 }

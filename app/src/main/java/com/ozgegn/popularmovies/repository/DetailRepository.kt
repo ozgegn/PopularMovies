@@ -48,6 +48,5 @@ class DetailRepository @Inject constructor(
         }
 
         detailLiveData.apply { postValue(detailData) }
-
     }
 }

@@ -14,5 +14,4 @@ interface MovieDetailsDao {
 
     @Query("SELECT * FROM movieDetails WHERE id=:id_")
     fun getMovieDetail(id_: Int): MovieDetailsResponse?
-
 }

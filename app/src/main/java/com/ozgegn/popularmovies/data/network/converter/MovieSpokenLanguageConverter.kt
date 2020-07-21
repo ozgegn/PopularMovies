@@ -17,7 +17,7 @@ open class MovieSpokenLanguageConverter {
     }
 
     @TypeConverter
-    fun fromJsonType(type: List<MovieSpokenLanguage>): String{
+    fun fromJsonType(type: List<MovieSpokenLanguage>): String {
         val listType = Types.newParameterizedType(List::class.java, MovieSpokenLanguage::class.java)
         val adapter: JsonAdapter<List<MovieSpokenLanguage>> = moshi.adapter(listType)
         return adapter.toJson(type)

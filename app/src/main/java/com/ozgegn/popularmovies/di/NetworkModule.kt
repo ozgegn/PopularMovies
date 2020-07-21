@@ -43,5 +43,4 @@ object NetworkModule {
     fun provideTmdbClient(tmdbApi: TmdbApi): TmdbClient {
         return TmdbClient(tmdbApi)
     }
-
 }

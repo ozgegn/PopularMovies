@@ -17,5 +17,4 @@ interface TopRatedMovieDao {
 
     @Query("SELECT * FROM topRatedMovies WHERE title LIKE '%' || :query || '%'")
     fun searchMovie(query: String): List<TopRatedMovieResult>
-
 }

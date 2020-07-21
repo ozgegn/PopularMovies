@@ -35,7 +35,7 @@ data class MovieDetailsResponse(
     @field:Json(name = "vote_count") val vote_count: Int?
 ) {
     fun getImageUrl(): String {
-        return "https://image.tmdb.org/t/p/w500/${poster_path}"
+        return "https://image.tmdb.org/t/p/w500/$poster_path"
     }
 }
 

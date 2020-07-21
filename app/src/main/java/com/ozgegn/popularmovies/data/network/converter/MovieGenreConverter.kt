@@ -23,5 +23,4 @@ open class MovieGenreConverter {
         val adapter: JsonAdapter<List<MovieGenre>> = moshi.adapter(listType)
         return adapter.toJson(type)
     }
-
 }

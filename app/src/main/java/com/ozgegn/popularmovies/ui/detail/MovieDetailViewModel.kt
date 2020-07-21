@@ -28,7 +28,6 @@ class MovieDetailViewModel @ViewModelInject constructor(
                 }
             }
         }
-
     }
 
     fun getMovieDetail(id: Int) {
@@ -36,5 +35,4 @@ class MovieDetailViewModel @ViewModelInject constructor(
     }
 
     fun isLoading(): ObservableBoolean = movieDetailRepository.isLoading
-
 }

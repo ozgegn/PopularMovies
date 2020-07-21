@@ -16,9 +16,8 @@ open class TopRatedMovieResponseConverter {
     }
 
     @TypeConverter
-    fun fromJsonType(type: TopRatedMovieResponse): String{
+    fun fromJsonType(type: TopRatedMovieResponse): String {
         val adapter: JsonAdapter<TopRatedMovieResponse> = moshi.adapter(TopRatedMovieResponse::class.java)
         return adapter.toJson(type)
     }
-
 }

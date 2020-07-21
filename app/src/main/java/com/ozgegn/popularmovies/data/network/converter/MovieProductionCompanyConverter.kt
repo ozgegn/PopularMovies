@@ -18,10 +18,9 @@ open class MovieProductionCompanyConverter {
     }
 
     @TypeConverter
-    fun fromJsonType(type: List<MovieProductionCompany>): String{
+    fun fromJsonType(type: List<MovieProductionCompany>): String {
         val listType = Types.newParameterizedType(List::class.java, MovieProductionCompany::class.java)
         val adapter: JsonAdapter<List<MovieProductionCompany>> = moshi.adapter(listType)
         return adapter.toJson(type)
     }
-
 }
